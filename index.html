@@ -11,6 +11,9 @@
 
 <body>
   <script>
+    let render = ()=>{
+      console.log(data);
+    }
     let xml = new XMLHttpRequest()
     xml.open('GET', './data.json', true)
     xml.onreadystatechange = () => {
@@ -18,9 +21,6 @@
       render()
     }
     xml.send()
-    let render = ()=>{
-
-    }
   </script>
 </body>
 
